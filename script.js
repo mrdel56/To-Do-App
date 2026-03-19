@@ -37,4 +37,24 @@ function showData(){
 }
 showData();
 
+//For dark theme
+const themeToggle = document.getElementById("theme-toggle");
+const todoApp = document.querySelector(".todo-app");
 
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+    todoApp.classList.add("dark");
+    themeToggle.innerHTML = "☀️";
+}
+
+themeToggle.addEventListener("click", () => {
+    todoApp.classList.toggle("dark");
+
+    if (todoApp.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+        themeToggle.innerHTML = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        themeToggle.innerHTML = "🌙";
+    }
+});
