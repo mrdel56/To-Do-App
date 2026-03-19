@@ -113,3 +113,61 @@ ul li span:hover{
     background: #edeef0;   
 }
 
+/* DARK THEME ONLY FOR TODO CARD */
+
+.todo-app.dark {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Input & row inside card */
+.todo-app.dark .row {
+    background: #2a2a2a;
+}
+
+.todo-app.dark input {
+    color: #ffffff;
+}
+
+/* Button */
+.todo-app.dark button {
+    background: #444;
+}
+
+/* List items */
+.todo-app.dark ul li {
+    color: #ddd;
+}
+
+/* Hover delete button */
+.todo-app.dark ul li span:hover {
+    background: #ffffff;
+}
+
+/* Checked task */
+.todo-app.dark ul li.checked {
+    color: #888;
+}
+
+.todo-app.dark h2 {
+    color: #ffffff;
+}
+
+.todo-app.dark .row button {
+    background: #ffffff;
+    color: #000000;
+}
+
+.todo-app.dark .row button:hover {
+    background: #e6e6e6;
+}
+
+.todo-app.dark .row input {
+    color: #ffffff;
+}
+
+#theme-toggle {
+    margin-left: auto;
+    padding: 10px 10px;
+    font-size: 16px;
+}
